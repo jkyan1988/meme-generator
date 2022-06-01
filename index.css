@@ -3,7 +3,7 @@
   width: 33.33%;
   column-rule-style: solid;
   column-rule-color: orange;
-  text-align: center
+  text-align: center;
   background-color: lightgreen;
   }
   /* The floats after the columns are cleared */
