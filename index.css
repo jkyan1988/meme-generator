@@ -1,0 +1,35 @@
+.column {
+  float: left;
+  width: 33.33%;
+  column-rule-style: solid;
+  column-rule-color: orange;
+  }
+  /* The floats after the columns are cleared */
+  .row:after {
+  content: “”;
+  display: table;
+  clear: both;
+  }
+
+  
+
+
+.piechart {
+    margin-top: 200px;
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: conic-gradient(
+        pink 70deg, 
+        lightblue 0 235deg, 
+        orange 0);
+}
+
+/* body,
+.piechart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
