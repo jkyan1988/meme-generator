@@ -3,38 +3,34 @@
 <head>
 <script src ="index.js"></script>
 <link rel="stylesheet" type="text/css" href="index.css"/>
-<title>Title of the document</title>
+<title>Project Phase 1</title>
 </head>
 
 <body>
 
 
 <div class="row">
-    <div class="column"><h1><b>LIST OF FOOD</b></h1>
-        
+        <div class="column"><span id="food-list-id"><h1><b>LIST OF FOOD</b></h1>
         <p></p>
-        <ul> <span>Items</span>
-            <li id="list-food"></li>
-            <li id="list-food"></li>
-            <li id="list-food"></li>
-            <li id="list-food"></li>
-            <li id="list-food"></li>
-          </ul>
-    </div>
-    <div class="column">
-        <h1><b>Nutrition / Price Guide</b></h1>
-        <p id="calories">Calories:</p>
-            <p id="fat">Fat:</p>
-            <p id="protein">Protein:</p>
-            <p id="carb">Carbohydrates:</p>
-            <p id="price">Price:</p>
-        <div class="piechart" id="pie-chart">
-            
+        <ul> <span id="items">Items</span><p></p>
+            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
+            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
+            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
+            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
+            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
+          </ul></span>
         </div>
-
-    </div>
-    <div class="column" id="food-form"><h1><b>FOOD FORM</b></h1>
-        <p>
+        <div class="column">
+        <h1><b>Nutrition / Price Guide</b></h1>
+            <p id="calories">Calories:  <span id="calories-id">Calories</span></p>
+            <p id="fat">Fat:            <span id="fat-id">Fat</span></p>
+            <p id="protein">Protein:    <span id="protein-id">Protein</span></p>
+            <p id="carb">Carbohydrates: <span id="carb-id">Carb</span></p>
+            <p id="price">Price:        <span id="price-id">Price</span></p>
+        <div class="piechart" id="pie-chart"></div>
+        </div>
+        <div class="column"><h1><b>FOOD FORM</b></h1>
+        <p><form id="food-form">
         <input type="text" name="food" id="food-input" />
         <p></p>
         <input type="text" name="food" id="food-input" />
@@ -46,9 +42,9 @@
         <input type="text" name="food" id="food-input" />
         <p>
         <button id="submit-button">Add Food Items To List</button></p>
-        </p>
-    </div>
-  </div>
+        </p></form>
+        </div>
+</div>
 
 
 </body>
