@@ -29,7 +29,16 @@ fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredie
 })
 
 
-
+	/* Open when someone clicks on the span element */
+	function openNav() {
+		document.getElementById("side-nav").style.width = "50%";
+	  }
+	  
+	  /* Close when someone clicks on the "x" symbol inside the overlay */
+	  function closeNav() {
+		document.getElementById("side-nav").style.width = "0%";
+	  
+	  }
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 // function myFunction() {
