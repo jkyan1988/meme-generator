@@ -8,9 +8,10 @@
 
 <body>
 
-
-<div class="row">
-        <div class="column"><span id="food-list-id"><h1><b>LIST OF FOOD</b></h1>
+<table>
+  <tr>
+    <td>
+      <div class="column"><span id="food-list-id"><h1><b>LIST OF FOOD</b></h1>
         <p></p>
         <ul> <span id="items">Items</span><p></p>
             <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
@@ -20,7 +21,9 @@
             <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
           </ul></span>
         </div>
-        <div class="column">
+    </td>
+    <td>
+      <div class="column">
         <h1><b>Nutrition / Price Guide</b></h1>
             <p id="calories">Calories:  <span id="calories-id">Calories</span></p>
             <p id="fat">Fat:            <span id="fat-id">Fat</span></p>
@@ -29,7 +32,9 @@
             <p id="price">Price:        <span id="price-id">Price</span></p>
         <div class="piechart" id="pie-chart"></div>
         </div>
-        <div class="column"><h1><b>FOOD FORM</b></h1>
+    </td>
+    <td>
+      <div class="column"><h1><b>FOOD FORM</b></h1>
         <p><form id="food-form">
         <input type="text" name="food" id="food-input" />
         <p></p>
@@ -44,6 +49,14 @@
         <button id="submit-button">Add Food Items To List</button></p>
         </p></form>
         </div>
+    </td>
+  </tr>
+
+</table>
+<div class="row">
+        
+        
+        
 </div>
 
 
