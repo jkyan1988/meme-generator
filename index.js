@@ -1,28 +1,52 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+const foodForm = document.getElementById('food-form')
+
+const foodList = document.getElementById('list-food')
+
+const foodFormInput = document.getElementById('food-input')
 
 
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com',
-		'X-RapidAPI-Key': '2e3f16e539mshfa3a1045a91b025p11dd85jsn239ca32e8706'
-	}
-};
 
-fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/1003464/ingredientWidget.json', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
-
+foodForm.addEventListener("submit", (event) => {
+	event.preventDefault()
 })
 
 
-const foodForm = document.getElementById('title-input')
-foodForm.addEventListener('submit', storeFoodForm)
 
-function storeFoodForm(event) {
-    event.preventDefault()
-    console.log(event)
-}
+const options = {
+		method: 'GET',
+		headers: {
+			'X-RapidAPI-Host': 'spoonacular-recipe-food-nutrition-v1.p.rapidapi.com',
+			'X-RapidAPI-Key': '2e3f16e539mshfa3a1045a91b025p11dd85jsn239ca32e8706'
+		}
+};
+	
+fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/food/ingredients/9266/information?amount=100&unit=gram', options)
+		.then(response => response.json())
+		.then(food => console.log(food))
+		.catch(err => console.log(err));
+})
 
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+// function myFunction() {
+// 	document.getElementById("myDropdown").classList.toggle("show");
+//   }
+  
+//   // Close the dropdown menu if the user clicks outside of it
+//   window.onclick = function(event) {
+// 	if (!event.target.matches('.dropbtn')) {
+// 	  var dropdowns = document.getElementsByClassName("dropdown-content");
+// 	  var i;
+// 	  for (i = 0; i < dropdowns.length; i++) {
+// 		var openDropdown = dropdowns[i];
+// 		if (openDropdown.classList.contains('show')) {
+// 		  openDropdown.classList.remove('show');
+// 		}
+// 	  }
+// 	}
+//   }
+// myFunction()

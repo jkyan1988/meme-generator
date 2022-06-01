@@ -3,6 +3,8 @@
   width: 33.33%;
   column-rule-style: solid;
   column-rule-color: orange;
+  text-align: center
+  background-color: lightgreen;
   }
   /* The floats after the columns are cleared */
   .row:after {
@@ -17,7 +19,7 @@
 .piechart {
     margin-top: 200px;
     display: block;
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -33,3 +35,4 @@
     justify-content: center;
     align-items: center;
 } */
+
