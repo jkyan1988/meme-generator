@@ -1,6 +1,58 @@
+table{
+  position:fixed;
+  width:100%;
+  z-index:-1;
+  top:0;
+}
+tr {
+  width:100%;
+}
+/*nav stuff*/
+.side-nav{
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+
+}
+#side-nav .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+#Nav_btn{
+	background-color:#2B2B2B;
+	color:white;
+	padding-right:auto;
+	margin-top:0px;
+	height:50px;
+
+}
+.Nav_btn{
+	font-size:36px;
+	
+}
+.btn{
+	color:white;
+	background-color:#2B2B2B;
+	border:none;
+	font-size:36px;
+	padding:0px;
+	transition:0.3s;
+	
+}
+.btn:hover{
+	color:#700001;
+	transition:0.5s;
+}
+button.btn{
+	padding-left:5px;
+	padding-right:5px;
+}
+
 .column {
-  float: left;
-  width: 33.33%;
+  /*float: left;*/
+  
   column-rule-style: solid;
   column-rule-color: orange;
   text-align: center;
@@ -28,7 +80,17 @@
         lightblue 0 235deg, 
         orange 0);
 }
-
+#side-nav{
+  left:0px;
+  top:0px;
+background: #700001;
+position: fixed;
+z-index: 0;
+width: 0%;
+  height: 100%;
+  overflow: hidden;
+transition:0.3s;
+}
 /* body,
 .piechart {
     display: flex;
