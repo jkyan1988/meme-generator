@@ -65,9 +65,14 @@ button.btn{
   clear: both;
   }
 
-  
+.foodform {
+  text-align: center;
+}
 
+.foodhead {
+  text-align: center;
 
+}
 .piechart {
     margin-top: 200px;
     display: block;
@@ -97,4 +102,3 @@ transition:0.3s;
     justify-content: center;
     align-items: center;
 } */
-

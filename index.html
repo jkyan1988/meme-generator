@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src ="index.js"></script>
+<script src ="index.js" type="module"></script>
 <link rel="stylesheet" type="text/css" href="index.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Project Phase 1</title>
@@ -11,6 +11,26 @@
   <span id="Nav_btn" onclick="openNav()" style="float:left; font-family:damion; font-size:30px; padding-right:0%;padding-bottom: 0%;height:fit-content;"><button class="btn" style="float:left;"><i class="fa fa-bars"></i></button></span>
   <div id="side-nav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <h1 class="foodhead"><b>FOOD FORM</b></h1>
+    <p><form id="food-form" class="foodform">
+    <input type="text" name="food" id="food-input" />
+    <p>
+      <input type="text" name="food" id="food-input-b" />
+    </p>
+    <p>
+      <input type="text" name="food" id="food-input-c" />
+    </p>
+    <p>
+      <input type="text" name="food" id="food-input-d" />
+    </p>
+    <p>
+      <input type="text" name="food" id="food-input-e" />
+    </p>
+    <p>
+    <button id="submit-button">Add Food To List</button>
+    </p>
+
     <h1><b>FOOD FORM</b></h1>
     <p><form id="food-form">
     <input type="text" name="food" id="food-input" />
@@ -24,6 +44,7 @@
     <input type="text" name="food" id="food-input" />
     <p>
     <button id="submit-button">Add Food Items To List</button></p>
+
     </p></form>
     </div>
 
@@ -31,19 +52,20 @@
 <table>
   <tr>
     <td width="75%">
-      <div class="column"><span id="food-list-id"><h1><b>LIST OF FOOD</b></h1>
+
+      <div class="column"><span id="food-list-id"><h1 id="foodlistlist"><b>LIST OF FOOD</b></h1>
         <p></p>
-        <ul> <span id="items">Items</span><p></p>
-            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
-            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
-            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
-            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
-            <li id="list-food"><span id="food-item">Food Item</span></li><p></p>
+        <ul id="food-list"> <p></p>
+            <li id="list-food">Food Item</li><p></p>
+            <li id="list-food-b">Food Item</li><p></p>
+            <li id="list-food-c">Food Item</li><p></p>
+            <li id="list-food-d">Food Item</li><p></p>
+            <li id="list-food-e">Food Item</li><p></p>
           </ul></span>
         </div>
     </td>
     <td>
-      <div class="column">
+      <div class="column" id="nutrition-guide">
         <h1><b>Nutrition / Price Guide</b></h1>
             <p id="calories">Calories:  <span id="calories-id">Calories</span></p>
             <p id="fat">Fat:            <span id="fat-id">Fat</span></p>
