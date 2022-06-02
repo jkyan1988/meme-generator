@@ -115,6 +115,7 @@ function pieChartChange(event) {
 })
 
 
+
 /* Open when someone clicks on the span element */
 function openNav() {
 	document.getElementById("side-nav").style.width = "50%";
@@ -125,3 +126,4 @@ function closeNav() {
 	document.getElementById("side-nav").style.width = "0%";
 }
 	
+
