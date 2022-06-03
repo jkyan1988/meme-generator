@@ -1,104 +1,55 @@
-table{
-  position:fixed;
-  width:100%;
-  z-index:-1;
-  top:0;
-}
-tr {
-  width:100%;
-}
-/*nav stuff*/
-.side-nav{
-  width: 0%;
-  height: 100%;
-  overflow: hidden;
 
-}
-#side-nav .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-#Nav_btn{
-	background-color:#2B2B2B;
-	color:white;
-	padding-right:auto;
-	margin-top:0px;
-	height:50px;
-
-}
-.Nav_btn{
-	font-size:36px;
-	
-}
-.btn{
-	color:white;
-	background-color:#2B2B2B;
-	border:none;
-	font-size:36px;
-	padding:0px;
-	transition:0.3s;
-	
-}
-.btn:hover{
-	color:#700001;
-	transition:0.5s;
-}
-button.btn{
-	padding-left:5px;
-	padding-right:5px;
+body{
+    background: linear-gradient(rgb(81, 115, 226), green);
 }
 
-.column {
-  /*float: left;*/
-  
-  column-rule-style: solid;
-  column-rule-color: orange;
-  text-align: center;
-  background-color: lightgreen;
-  }
-  /* The floats after the columns are cleared */
-  .row:after {
-  content: “”;
-  display: table;
-  clear: both;
-  }
 
-.foodform {
-  text-align: center;
+.meme-box{
+    text-align: center;
+    font-family: "Lucida Console";
 }
 
-.foodhead {
-  text-align: center;
-
+.generate{
+    font-family: "Lucida Console";
+    text-align: center;
 }
-.piechart {
-    margin-top: 200px;
-    display: block;
-    position: absolute;
+
+button {
+    display: inline-block;
+    background-color: #7b38d8;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
     width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-image: conic-gradient(
-        pink 70deg, 
-        lightblue 0 235deg, 
-        orange 0);
-}
-#side-nav{
-  left:0px;
-  top:0px;
-background: #700001;
-position: fixed;
-z-index: 0;
-width: 0%;
-  height: 100%;
-  overflow: hidden;
-transition:0.3s;
-}
-/* body,
-.piechart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  button:hover {
+    background-color: #f7c2f9;
+  }
+  button:hover span {
+    padding-right: 25px;
+  }
+  button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
