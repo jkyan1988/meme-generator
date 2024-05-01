@@ -1,4 +1,4 @@
-Welcome to my MEME GENERATOR APP
+Welcome to my MEME GENERATOR APP 
 
 
 Instructions
