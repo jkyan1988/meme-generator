@@ -35,10 +35,10 @@ memeSubtitle.addEventListener('dblclick', (e) => {
     alert("Welcome to my Meme Page")
   })
 
-window.addEventListener('resize', resizeWindow)
-function resizeWindow(){
-    alert('Window has been randomized as well!')
-}
+// window.addEventListener('resize', resizeWindow)
+// function resizeWindow(){
+//     alert('Window has been randomized as well!')
+// }
 
 
 
